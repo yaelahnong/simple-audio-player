@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #f43ff5;
+}
+
+body {
+  color: var(--primary-color);
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 62.5%;
+}
+
+.audio-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 50vw;
+  height: 10rem;
+  background-color: orangered;
+  border-radius: 1rem;
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  height: 4rem;
+  width: 4rem;
+  font-size: 3.5rem;
+  overflow: hidden;
+  color: black;
+}
+
+.progress-container {
+  position: relative;
+  background-color: orangered;
+  height: 1.5rem;
+  width: 30rem;
+  border: 0.3rem solid black;
+  border-radius: 3px;
+}
+
+.progress {
+  position: absolute;
+  /* width: 1.25rem; */
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: black;
+  /* top: 0.125rem; */
+  left: 0rem;
+}
+
+.volume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.volumeUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  flex-grow: 1;
+  font-size: 3rem;
+  color: black;
+  border: 0.3rem solid black;
+  border-radius: 1rem 1rem 0 0;
+  margin-bottom: 0.1rem;
+}
+
+.volumeUp:active {
+  transform: scale(0.98);
+}
+
+.volumeDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 5rem;
+  color: black;
+  border: 0.3rem solid black;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.volumeDown:active {
+  transform: scale(0.98);
+}
