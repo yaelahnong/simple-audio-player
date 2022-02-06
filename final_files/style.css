@@ -1,10 +1,16 @@
 :root {
-  --primary-color: #f43ff5;
+  --primary-color: orangered;
+  --secondary-color: black;
+}
+
+body.alt {
+  --primary-color: black;
+  --secondary-color: white;
 }
 
 body {
   color: var(--primary-color);
-  background-color: black;
+  /* background-color: black; */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,7 +26,7 @@ body {
   align-items: center;
   width: 50vw;
   height: 10rem;
-  background-color: orangered;
+  background-color: var(--primary-color);
   border-radius: 1rem;
 }
 
@@ -33,15 +39,15 @@ body {
   width: 4rem;
   font-size: 3.5rem;
   overflow: hidden;
-  color: black;
+  color: var(--secondary-color);
 }
 
 .progress-container {
   position: relative;
-  background-color: orangered;
-  height: 1.5rem;
+  background-color: var(--secondary-color);
+  height: 0.5rem;
   width: 30rem;
-  border: 0.3rem solid black;
+  border: 0.3rem solid var(--primary-color);
   border-radius: 3px;
 }
 
@@ -51,9 +57,10 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  background-color: black;
+  background-color: var(--secondary-color);
   /* top: 0.125rem; */
   left: 0rem;
+  top: -0.5rem;
 }
 
 .volume {
@@ -71,8 +78,8 @@ body {
   height: 3rem;
   flex-grow: 1;
   font-size: 3rem;
-  color: black;
-  border: 0.3rem solid black;
+  color: var(--secondary-color);
+  border: 0.3rem solid var(--secondary-color);
   border-radius: 1rem 1rem 0 0;
   margin-bottom: 0.1rem;
 }
@@ -88,8 +95,8 @@ body {
   width: 3rem;
   height: 3rem;
   font-size: 5rem;
-  color: black;
-  border: 0.3rem solid black;
+  color: var(--secondary-color);
+  border: 0.3rem solid var(--secondary-color);
   border-radius: 0 0 1rem 1rem;
 }
 
