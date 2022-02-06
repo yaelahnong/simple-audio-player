@@ -14,12 +14,10 @@ const pauseCode = '&#9612;&#9612;';
 playButton.addEventListener('click', () => {
     if(audioEl.paused) {
         audioEl.play();
-        console.log(audioEl.paused);
         playButton.style.fontSize = '2rem';
         playButton.innerHTML = pauseCode;
     } else {
         audioEl.pause();
-        console.log(audioEl.paused);
         playButton.style.fontSize = '3.5rem';
         playButton.innerHTML = playCode;
     }
@@ -35,7 +33,7 @@ volumeDown.addEventListener('click', () => {
 
 function setProgressPosition() {
     setInterval(() => {
-        const progressContainerWidth = progressContainer.clientWidth;
+        const progressContainerWidth = progressContainer.clientWidth - progressIndicator.clientWidth;
         const duration = audioEl.duration;
         const currentTime = audioEl.currentTime;
         const percentagePlayed = (duration - currentTime) / duration;
