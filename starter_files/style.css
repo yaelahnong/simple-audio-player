@@ -1,13 +1,45 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.master_layout {
+  height: 100vh;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.left_sidebar, .main_view, .right_sidebar {
+  height: 87vh;
+}
+
+.now_playing_bar {
+  height: 10vh;
+}
+
+.play {
+  width: 40px;
+  height: 40px;
+}
+
+.progress_container {
+  position: relative;
+  background-color: #fff;
+  height: 0.1rem;
+  width: 30rem;
+  border: 0.1rem solid #a4a4a4;
+  border-radius: 3px;
+}
+
+.progr {
+  position: absolute;
+  /* width: 1.25rem; */
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #fff;
+  /* top: 0.125rem; */
+  /* left: 0rem; */
+  top: -0.5rem;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.album_cover img {
+  object-fit: cover;
 }

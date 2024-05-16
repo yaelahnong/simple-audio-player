@@ -1,13 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Spotify Player</title>
-</head>
-<body>
-    <audio src="" controls></audio>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="master_layout">
+      <div class="row bg-black text-white g-2 p-2">
+        <div class="col-3 left_sidebar">
+          <div class="left_sidebar_content bg-dark h-100">
+            Left Sidebar
+          </div>
+        </div>
+        <div class="col-6 main_view">
+          <div class="main_view_content bg-dark h-100">
+            Main View
+          </div>
+        </div>
+        <div class="col-3 right_sidebar">
+          <div class="right_sidebar_content bg-dark h-100">
+            Right Sidebar
+          </div>
+        </div>
+        <div class="col-12 now_playing_bar">
+          <div class="now_playing_bar_content h-100">
+            <div class="row p-2">
+              <div class="col-3">
+                <div class="row gx-3">
+                  <div class="col-auto album_cover">
+                    <img src="./assets/keyshia_cole.jpeg" alt="Keyshia Cole - The Way It Is Album Cover" width="56" height="56">
+                  </div>
+                  <div class="col">
+                    <span class="d-block">Love</span>
+                    <span class="d-block text-white-50">Keyshia Cole</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 d-flex justify-content-center">
+                <div class="row">
+                  <!-- <div class="col-auto d-flex justify-content-center align-items-center">
+                    <i class="cursor_pointer ri-skip-back-fill"></i>
+                  </div> -->
+                  <div class="col-auto mx-auto d-flex justify-content-center align-items-center">
+                    <div class="play rounded-pill text-dark bg-white d-flex justify-content-center align-items-center">
+                      <i class="cursor_pointer ri-play-fill"></i>
+                    </div>
+                  </div>
+                  <!-- <div class="col-auto d-flex justify-content-center align-items-center">
+                    <i class="cursor_pointer ri-skip-forward-fill"></i>
+                  </div> -->
+                  <div class="col-12 mt-3">
+                    <audio src="./assets/replikas.mp3" id="audio-player"></audio>
+                    <div class="audio-controls d-flex justify-content-center align-items-center">
+                      <div class="progress_container">
+                        <div class="progr" draggable=true></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="row volume">
+                  <div class="col-auto volumeDown">
+                    <i class="cursor_pointer ri-volume-down-fill"></i>
+                  </div>
+                  <div class="col-auto volumeUp">
+                    <i class="cursor_pointer ri-volume-up-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+    <script src="./bootstrap.bundle.min.js"></script>
+  </body>
 </html>
